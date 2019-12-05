@@ -107,13 +107,27 @@ public class Maincontroller {
 
     @GetMapping("/img1")
     public String img1() {
-        System.out.println("my_img");
+//        System.out.println("my_img");
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+        return "photo/myphoto";
+    }
+
+    @GetMapping("/imgpro")
+    public String imgpro() {
+//        System.out.println("my_img");
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
         return "photo/myphotopro";
-//        return "my_img_start";
     }
 
+    @GetMapping("/test")
+    public String test() {
+//        System.out.println("my_img");
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+        return "my_img_start";
+    }
 
     @GetMapping("/yourselfmessages")
     public String yourselfmessages(Map<String,Object>map) {

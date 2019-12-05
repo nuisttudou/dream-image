@@ -70,6 +70,8 @@ public class ShiroConfig {
 //        System.out.println("ShiroConfig");
         filterChainDefinitionMap.put("/photo/**", "anon");
         filterChainDefinitionMap.put("/img1", "anon");
+        filterChainDefinitionMap.put("/imgpro", "anon");
+        filterChainDefinitionMap.put("/test", "anon");
 
         filterChainDefinitionMap.put("/**", "authc");
 
