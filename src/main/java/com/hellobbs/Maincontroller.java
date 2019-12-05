@@ -105,6 +105,14 @@ public class Maincontroller {
         return "isok";
     }
 
+    @GetMapping("/img1")
+    public String img1() {
+        System.out.println("my_img");
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+        return "my_img_start";
+    }
+
 
     @GetMapping("/yourselfmessages")
     public String yourselfmessages(Map<String,Object>map) {

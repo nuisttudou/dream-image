@@ -66,6 +66,10 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/index", "anon");
         filterChainDefinitionMap.put("/bbs_everythingtotalk", "anon");
         filterChainDefinitionMap.put("/bbs_everythingtotalk/**", "anon");
+
+//        System.out.println("ShiroConfig");
+//        filterChainDefinitionMap.put("/img1", "anon");
+
         filterChainDefinitionMap.put("/**", "authc");
 
 

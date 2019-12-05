@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_codetosharewith.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_everythingtotalk.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_everythingtotalkwith.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_forandroid.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_forandroidwith.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_forcomplain.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_forcomplainwith.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_forweb.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_forwebwith.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_forwindows.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_forwindowswith.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_learnfromothers.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_learnfromotherswith.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/dbfiles/bbs_user.sql" dialect="MySQL" />
+  </component>
+</project>

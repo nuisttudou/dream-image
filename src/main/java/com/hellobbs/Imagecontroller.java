@@ -12,7 +12,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayOutputStream;
 import java.util.Random;
-
+/*验证码生成机制*/
 @Controller
 @RequestMapping("/images")
 public class Imagecontroller {
@@ -35,8 +35,7 @@ public class Imagecontroller {
         ServletOutputStream out;
         out = response.getOutputStream();
 
-
-        String old = "23456789abcdefghijkmnpqrstuvwxyz"; //验证图片上面的随机字符
+        String old = "123456789abcdefghijkmnpqrstuvwxyz"; //验证图片上面的随机字符
         StringBuffer sb = new StringBuffer();
         int j = 0;
         for (int i = 0; i < 4; i++) {
