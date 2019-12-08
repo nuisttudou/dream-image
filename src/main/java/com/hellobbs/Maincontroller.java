@@ -130,6 +130,15 @@ public class Maincontroller {
 //        return "my_img_start";
     }
 
+    @GetMapping("/uploadimg")
+    public String uploadimg() {
+//        System.out.println("my_img");
+        Subject subject = SecurityUtils.getSubject();
+        subject.logout();
+        return "upload/upload_img";
+//        return "my_img_start";
+    }
+
     @GetMapping("/yourselfmessages")
     public String yourselfmessages(Map<String,Object>map) {
         Subject currentUserId = SecurityUtils.getSubject();

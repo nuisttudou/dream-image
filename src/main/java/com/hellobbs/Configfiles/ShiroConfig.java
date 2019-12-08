@@ -75,6 +75,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/test", "anon");
         filterChainDefinitionMap.put("/upload/**", "anon");//方便读取资源文件
         filterChainDefinitionMap.put("/uploadFile/**", "anon");//
+        filterChainDefinitionMap.put("/uploadimg", "anon");//
         filterChainDefinitionMap.put("/downloadFile/**", "anon");//
 
         filterChainDefinitionMap.put("/**", "authc");
