@@ -24,7 +24,7 @@ function uploadSingleFile(file) {
             singleFileUploadError.style.display = "none";
             singleFileUploadSuccess.innerHTML = "<p>File Uploaded Successfully.</p><p>DownloadUrl : <a href='" +
                 response.fileDownloadUri + "' target='_blank'>" + response.fileDownloadUri + "</a></p>"+
-                "<p>useUrl: localhost:8080/images/userimg/"+response.fileName+"</p>"
+                "<p>useUrl: http://localhost:8080/images/userimg/"+response.fileName+"</p>"
             ;
             singleFileUploadSuccess.style.display = "block";
         } else {

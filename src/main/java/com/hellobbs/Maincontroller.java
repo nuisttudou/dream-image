@@ -106,35 +106,67 @@ public class Maincontroller {
     }
 
     @GetMapping("/img1")
-    public String img1() {
-//        System.out.println("my_img");
-        Subject subject = SecurityUtils.getSubject();
-        subject.logout();
+    public String img1(Map<String,Object>map) {
+        try {
+            Subject currentUserId = SecurityUtils.getSubject();
+            User user = (User) currentUserId.getPrincipal();
+            User user2 = sqlSession.selectOne("mainmapper.getuser", user.getUsername());
+            map.put("justside", user2);
+        } catch (Exception e) {
+            System.out.print("  ");
+        }
+////        System.out.println("my_img");
+//        Subject subject = SecurityUtils.getSubject();
+//        subject.logout();
         return "photo/myphoto";
     }
 
     @GetMapping("/imgpro")
-    public String imgpro() {
-//        System.out.println("my_img");
-        Subject subject = SecurityUtils.getSubject();
-        subject.logout();
+    public String imgpro(Map<String,Object>map) {
+        try {
+            Subject currentUserId = SecurityUtils.getSubject();
+            User user = (User) currentUserId.getPrincipal();
+            User user2 = sqlSession.selectOne("mainmapper.getuser", user.getUsername());
+            map.put("justside", user2);
+        } catch (Exception e) {
+            System.out.print("  ");
+        }
+////        System.out.println("my_img");
+//        Subject subject = SecurityUtils.getSubject();
+//        subject.logout();
         return "photo/myphotopro";
     }
 
     @GetMapping("/test")
-    public String test() {
+    public String test(Map<String,Object>map) {
+        try {
+            Subject currentUserId = SecurityUtils.getSubject();
+            User user = (User) currentUserId.getPrincipal();
+            User user2 = sqlSession.selectOne("mainmapper.getuser", user.getUsername());
+            map.put("justside", user2);
+        } catch (Exception e) {
+            System.out.print("  ");
+        }
 //        System.out.println("my_img");
-        Subject subject = SecurityUtils.getSubject();
-        subject.logout();
+//        Subject subject = SecurityUtils.getSubject();
+//        subject.logout();
         return "upload/index";
 //        return "my_img_start";
     }
 
     @GetMapping("/uploadimg")
-    public String uploadimg() {
+    public String uploadimg(Map<String,Object>map) {
 //        System.out.println("my_img");
-        Subject subject = SecurityUtils.getSubject();
-        subject.logout();
+//        Subject subject = SecurityUtils.getSubject();
+//        subject.logout();
+        try {
+            Subject currentUserId = SecurityUtils.getSubject();
+            User user = (User) currentUserId.getPrincipal();
+            User user2 = sqlSession.selectOne("mainmapper.getuser", user.getUsername());
+            map.put("justside", user2);
+        } catch (Exception e) {
+            System.out.print("  ");
+        }
         return "upload/upload_img";
 //        return "my_img_start";
     }
