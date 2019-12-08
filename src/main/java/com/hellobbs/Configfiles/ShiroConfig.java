@@ -68,12 +68,16 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/bbs_everythingtotalk/**", "anon");
 
 //        System.out.println("ShiroConfig");
-//        filterChainDefinitionMap.put("/photo/**", "anon");
+        filterChainDefinitionMap.put("/photo/**", "anon");//方便读取资源文件
         filterChainDefinitionMap.put("/img1", "anon");
         filterChainDefinitionMap.put("/imgpro", "anon");
-        filterChainDefinitionMap.put("/test", "anon");
 
-//        filterChainDefinitionMap.put("/**", "authc");
+        filterChainDefinitionMap.put("/test", "anon");
+        filterChainDefinitionMap.put("/upload/**", "anon");//方便读取资源文件
+        filterChainDefinitionMap.put("/uploadFile/**", "anon");//
+        filterChainDefinitionMap.put("/downloadFile/**", "anon");//
+
+        filterChainDefinitionMap.put("/**", "authc");
 
 
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
