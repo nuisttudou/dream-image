@@ -57,6 +57,15 @@
             <version>1.4.0</version>
         </dependency>
 
+
+
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -71,5 +80,46 @@
         </plugins>
     </build>
 
+
+
+<!--    <groupId>com.example</groupId>-->
+<!--    <artifactId>file-demo</artifactId>-->
+<!--    <version>0.0.1-SNAPSHOT</version>-->
+<!--    <packaging>jar</packaging>-->
+
+<!--    <name>file-demo</name>-->
+<!--    <description>Spring Boot File Upload / Download Demo</description>-->
+
+<!--    <parent>-->
+<!--        <groupId>org.springframework.boot</groupId>-->
+<!--        <artifactId>spring-boot-starter-parent</artifactId>-->
+<!--        <version>2.2.1.RELEASE</version>-->
+<!--        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;-->
+<!--    </parent>-->
+
+<!--    <properties>-->
+<!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+<!--        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
+<!--        <java.version>1.8</java.version>-->
+<!--    </properties>-->
+
+<!--    <dependencies>-->
+
+<!--    </dependencies>-->
+
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>ali-maven</id>-->
+<!--            <url>http://maven.aliyun.com/nexus/content/groups/public</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
 
 </project>

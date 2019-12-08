@@ -126,7 +126,8 @@ public class Maincontroller {
 //        System.out.println("my_img");
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
-        return "my_img_start";
+        return "upload/index";
+//        return "my_img_start";
     }
 
     @GetMapping("/yourselfmessages")
