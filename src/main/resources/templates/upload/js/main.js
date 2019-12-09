@@ -10,7 +10,8 @@ var multipleFileUploadInput = document.querySelector('#multipleFileUploadInput')
 var multipleFileUploadError = document.querySelector('#multipleFileUploadError');
 var multipleFileUploadSuccess = document.querySelector('#multipleFileUploadSuccess');
 
-function uploadSingleFile(file) {
+function uploadSingleFile(file) {//后
+    console.log("uploadSingleFile(file)");
     var formData = new FormData();
     formData.append("file", file);
 
@@ -65,8 +66,9 @@ function uploadMultipleFiles(files) {
     xhr.send(formData);
 }
 
-singleUploadForm.addEventListener('submit', function(event){
+singleUploadForm.addEventListener('submit', function(event){//先
     var files = singleFileUploadInput.files;
+    console.log(files);
     if(files.length === 0) {
         singleFileUploadError.innerHTML = "Please select a file";
         singleFileUploadError.style.display = "block";
