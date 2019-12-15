@@ -1,6 +1,5 @@
-#-------I server for soviet Union
-## 应用名称
-It'sjustabbs（个人论坛）
+
+# 梦图论坛-图像分享社区（个人论坛）
 
 ## 技术栈	
 	JDk8
@@ -20,10 +19,17 @@ It'sjustabbs（个人论坛）
 * 使用命令 mvn clean package构建项目
 * 构建完成后一般在target\目录下会得到一个jar包，运行该jar包即可
 
-## 部分截图
-![图1](screenshot/001.jpg)
-![图2](screenshot/002.jpg)
-![图3](screenshot/003.jpg)
-![图4](screenshot/004.jpg)
-![图5](screenshot/005.jpg)
-![图6](screenshot/006.jpg)
+
+
+
+# Using Project
+https://github.com/1036151470/HelloBbsMybatis2  
+https://github.com/AlloyTeam/AlloyImage与https://github.com/AlloyTeam/AlloyPhoto/tree/master/alloyphoto  
+https://github.com/callicoder/spring-boot-file-upload-download-rest-api-example  
+
+### 开发中使用的工具  
+    IDEA
+    Postman
+    
+
+-------I server for soviet Union

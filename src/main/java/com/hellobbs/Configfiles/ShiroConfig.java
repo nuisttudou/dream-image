@@ -78,6 +78,7 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/uploadimg", "anon");//
         filterChainDefinitionMap.put("/downloadFile/**", "anon");//
 
+//        filterChainDefinitionMap.put("sm.ms/**", "anon");//
         filterChainDefinitionMap.put("/**", "authc");
 
 

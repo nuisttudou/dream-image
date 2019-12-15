@@ -64,16 +64,14 @@
   </ul>
   <ul class="command_items">
     <li>
-        <a class="button" href="#" class="mask">打开图片</a><tr>
+        <a class="button" href="#" class="mask">打开图片</a>
         <a class="savebutton" href="#" class="mask" onclick="javascript:downloadImg()">保存图片</a>
 
-        <form  id="singleUploadForm" name="singleUploadForm">
-<!--          <input id="singleFileUploadInput" type="file" name="file" class="file-input" required />-->
-          <button type="button" class="primary submit-btn">Submit</button>
+          <button id="singleUploadButton" type="button"  name="singleUp">Submit</button>
+          <button id="singleUploadButtonSMMS"  type="button" >Submit图床</button>
 
-          <div class="upload-response">
-            <div id="singleFileUploadError"></div>
-            <div id="singleFileUploadSuccess"></div>
+      <div class="upload-response">
+            <div id="singleFileUploadSuccess" style=""></div>
           </div>
 
         </form>
