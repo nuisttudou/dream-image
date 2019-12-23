@@ -33,4 +33,4 @@
         $(".commonmsgbox").slideUp("fast");
       }
     }
-        // return new MsgBox("选择学校","请选择学校","dfsf");
+        return new MsgBox("选择学校","请选择学校","dfsf");

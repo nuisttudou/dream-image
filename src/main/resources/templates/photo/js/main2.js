@@ -32,34 +32,6 @@
         eventAtt: function(){
             var _this = this;
 
-            /*
-            this.addEvent(".pic","dragstart",function(e){
-                var dx = e.offsetX ? e.offsetX : e.layerX;
-                var dy = e.offsetY ? e.offsetY : e.layerY;
-                e.dataTransfer.setData("dx", dx);
-                e.dataTransfer.setData("dy", dy);
-            });
-
-            this.addEvent(".pic","drag",function(e){
-                e.preventDefault();
-            });
-            this.addEvent(".picWrapper", "dragover", function(e){
-                e.preventDefault();
-            });
-            this.addEvent(".picWrapper", "drop", function(e){
-                var dx = e.dataTransfer.getData("dx");
-                var dy = e.dataTransfer.getData("dy");
-                var x = e.offsetX ? e.offsetX : e.layerX;
-                var y = e.offsetY ? e.offsetY : e.layerY;
-
-                var pic = document.getElementById("pic");
-                
-                pic.style.left = (x - dx) + "px";
-                pic.style.top = (y - dy) + "px";
-
-                
-            });
-            */
 
             var clickFlag = 0, dx, dy, left, top;
             this.addEvent(".pic", "mousedown", function(e){
@@ -229,8 +201,8 @@
                 "木雕" : "e13",
                 "粗糙" : "e14"
             };
-            var effectModel = '<li class="e_item"><div class="imgWrapper"><img src="/photo/style/image/demo/{pic}.png" alt="" />{effect}</div></li>';
-            var html = '<li class="e_item"><div class="imgWrapper"><img src="/photo/style/image/demo/e1.jpg" alt="" />原图</div></li>';
+            var effectModel = '<li class="e_item"><div class="imgWrapper"><img src="photo/style/image/demo/{pic}.png" alt="" />{effect}</div></li>';
+            var html = '<li class="e_item"><div class="imgWrapper"><img src="photo/style/image/demo/e1.jpg" alt="" />原图</div></li>';
             for(var i in EasyReflection){
                html += effectModel.replace("{effect}",i.length < 3 ? i + "效果" : i).replace("{pic}", EasyReflection[i]); 
             }

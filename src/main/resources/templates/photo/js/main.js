@@ -366,7 +366,7 @@
             $("#upFile").change(function(e){
                 msg.title = "读取文件";
                 msg.msg = "正在读取文件...";
-                msg.inhtml = "<img src='/photo/style/image/03.gif' />";
+                msg.inhtml = "<img src='photo/style/image/03.gif' />";
                 msg.init();
                 msg.show();
 

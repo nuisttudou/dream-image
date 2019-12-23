@@ -1,40 +1,44 @@
 body{
-        background:#d2d0d0;
-        margin:0;
-        font-family:Microsoft Yahei,Arial;
-        min-width:1003px;
-        font-size:12px;
+        height: 100%;
+        min-width: 1003px;
+        text-shadow: rgba(0, 0, 0, 0.75) 0px 1px 3px;
+        color: rgb(255, 255, 255);
+        font-family: "Microsoft Yahei", 宋体;
+        background: url(image/cardboard.png);
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
 }
 img{
         vertical-align:middle;
 }
 .wrapper{
-        margin:10px 100px;
         min-width:803px;
 }
 .wrapper .title{
-        background:#ecebeb;
-        margin-bottom:10px;
-        text-align:center;
-        color:navy;
-        padding:4px 0;
-        font-size:14px;
+        border-bottom: 1px solid #575C62;
+        text-align: center;
+        margin: 0;
+        height: 40px;
+        line-height: 40px;
+        background: #26292d;
 }
 .panel{
-        background:#ecebeb;
+        background:#1d1d1d73;
         position:relative;
         height:82px;
 }
 .pItem,.subItem{
         width:95px;
         height:56px;
-        background:#6158d4;
+        background:#565f7f57;
         text-align:center;
         float:left;
         margin-top:13px;
         cursor:pointer;
         margin-left:8px;
-        color:#fff;
+        color:#ffffffc7;
+        border-radius: 10px;
 }
 .pItem img{
         margin-top:6px;
@@ -45,13 +49,14 @@ img{
 }
 .left,.right{
         margin-top:20px;
-        height:430px;
-        background:#ecebeb;
+        height:600px;
+        background:#1d1d1d73;
 }
 .left{
         float:left;
-        width:570px;
+        width:1000px;
         position:relative;
+        margin-left: 50px;
 }
 .painting{
         position:absolute;
@@ -60,16 +65,16 @@ img{
 }
 .openFile{
         font-size:25px;
-        margin-top:170px;
+        margin-top:280px;
         color:#ccc;
         text-align:center;
 }
 .right{
         float:right;
         text-align:center;
-        margin-left:10px;
+        margin-left:1120px;
         width:214px;
-        position:relative;
+        position:absolute;
 }
 .rect{
         height:91px;
@@ -82,7 +87,7 @@ img{
 .layer .lItem{
         width:192px;
         height:38px;
-        background:#e39ae7;
+        background:#cecece1c;
         line-height:38px;
         padding-left:10px;
         margin:5px 6px;
@@ -90,8 +95,8 @@ img{
         cursor:pointer;
 }
 .layer .blueStyle{
-        background:blue;
-        border:1px solid red;
+        background:#cecece1c;
+        border:1px solid #0043ef;
 }
 #upFile{
         position:absolute;
@@ -107,20 +112,20 @@ img{
         height:300px;
         position:fixed;
         z-index:10;
-        background:#fff;
-        border:1px solid #ccc;
+        background: #505050f2;
+        border: 1px solid #2f2f2f;
 }
 .commonmsgbox .title{
-        background:url(image/msgtitle.png) no-repeat;
-        margin-top:-5px;
-        text-align:center;
-        color:#fff;
-        width:500px;
-        line-height:40px;
-        height:40px;
+        margin-top: -5px;
+        text-align: center;
+        color: #fff;
+        width: 500px;
+        line-height: 40px;
+        height: 40px;
 }
 .commonmsgbox a{
         text-decoration:none;
+
 }
 .commonmsgbox .commonmsg{
         border-left:1px solid #ccc;
@@ -130,17 +135,17 @@ img{
 .commonmsgbox .msgclose{
         font-size:12px;
         float:right;
-        margin-top:-50px;
+        margin-top:-33px;
         padding-right:10px;
         cursor:pointer;
-        color:red;
+        color:#9c9c9c;
 }
 .commonmsgbox .commonmsg{
         padding-left:20px;
         font-size:16px;
         padding-top:10px;
         line-height:24px;
-        color:navy;
+        color: rgba(128, 124, 126, 0.86);
 }
 .commonmsgbox .content{
         padding:30px;
@@ -148,7 +153,7 @@ img{
         text-align:center;
 }
 .edit{
-        background:#ccc;
+        background:#00000059;
         padding:6px;
         margin-top:8px;
 }
@@ -157,23 +162,23 @@ img{
         margin-left:4px;
 }
 .back{
-        position:absolute;
-        left:-40px;
-        width:30px;
+        position:relative;
+        left:10px;
+        width:47px;
         height:auto;
-        top:4px;
+        top:16px;
         display:none;
+        opacity: 0.3;
 }
 .dBar{
-        width:300px;
-        height:15px;
-        border:2px solid #ccc;
-        position:relative;
-        border-radius:10px;
-        margin-top:10px;
-        margin-bottom:10px;
-        display:inline-block;
-        vertical-align:bottom;
+        width: 300px;
+        height: 15px;
+        border: 2px solid #ccc;
+        position: relative;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: -3px;
+        display: inline-block;
 }
 .dBar a{
         display:block;
@@ -187,7 +192,34 @@ img{
         background:#999;
 }
 .dBar .dMsg{
-        position:absolute;
-        right:-20px;
-        top:0;
+        position: absolute;
+        right: -38px;
+        top: -5px;
+}
+button{
+        width:100px;
+        text-align:center;
+        line-height:100%;
+        padding:0.3em;
+        font:16px Arial,sans-serif bold;
+        font-style:normal;
+        text-decoration:none;
+        margin:2px;
+        vertical-align:text-bottom;
+        zoom:1;
+        outline:none;
+        font-size-adjust:none;
+        font-stretch:normal;
+        border-radius:50px;
+        box-shadow:0px 1px 2px rgba(0,0,0,0.2);
+        text-shadow:0px 1px 1px rgba(0,0,0,0.3);
+        color:#fefee9;
+        border:0.2px solid #2299ff;
+        background-repeat:repeat;
+        background-size:auto;
+        background-origin:padding-box;
+        background-clip:padding-box;
+        background-color:#3399ff;
+        background: linear-gradient(to bottom, #5d5d5d 0%,#313131 100%);;
+
 }
