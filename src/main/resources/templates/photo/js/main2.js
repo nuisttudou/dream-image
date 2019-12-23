@@ -201,8 +201,8 @@
                 "木雕" : "e13",
                 "粗糙" : "e14"
             };
-            var effectModel = '<li class="e_item"><div class="imgWrapper"><img src="photo/style/image/demo/{pic}.png" alt="" />{effect}</div></li>';
-            var html = '<li class="e_item"><div class="imgWrapper"><img src="photo/style/image/demo/e1.jpg" alt="" />原图</div></li>';
+            var effectModel = '<li class="e_item"><div class="imgWrapper"><img src="style/image/demo/{pic}.jpg" alt="" />{effect}</div></li>';
+            var html = '<li class="e_item"><div class="imgWrapper"><img src="style/image/demo/k0.jpg" alt="" />原图</div></li>';
             for(var i in EasyReflection){
                html += effectModel.replace("{effect}",i.length < 3 ? i + "效果" : i).replace("{pic}", EasyReflection[i]); 
             }

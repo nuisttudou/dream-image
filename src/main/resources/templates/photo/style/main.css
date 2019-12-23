@@ -210,7 +210,7 @@ a.button{
     font-size: 17px;
     font-weight: bold;
     padding: 3px 8px;
-    margin-top: 17px;
+    margin:15px 3px 0px 1px;
 }
 
 a.button:hover{
