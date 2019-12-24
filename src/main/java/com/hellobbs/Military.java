@@ -22,14 +22,14 @@ import java.util.Map;
 
 @Controller
 @Scope("prototype")
-public class Learnfromothers {
+public class Military {
 
     @Autowired
     SqlSession sqlSession;
 
-    private static final String tablename = "learnfromothers.";
-    private static final String controllername = "/bbs_learnfromothers";
-    private static final String controllernamefor2 = "/bbs_learnfromothers/";
+    private static final String tablename = "military.";
+    private static final String controllername = "/bbs_military";
+    private static final String controllernamefor2 = "/bbs_military/";
 
     @GetMapping(controllernamefor2 + "{num}")
     public String bbscontext(@PathVariable int num, Map<String, Object> map) {
@@ -43,11 +43,11 @@ public class Learnfromothers {
         }
 
         Userwith iterable = sqlSession.selectOne(tablename + "getwithbbs_user", num);
-        Iterable<Boardcontextwith> iterablewith = sqlSession.selectList(tablename + "getwithbbs_everythingtotalk", num);
+        Iterable<Boardcontextwith> iterablewith = sqlSession.selectList(tablename + "getwithbbs_anime", num);
 
         map.put("context", iterable);
         map.put("contextwith", iterablewith);
-        map.put("intodbwith", tablename+"into_everythingtotalkwith");
+        map.put("intodbwith", tablename+"into_animewith");
         return "bbscontext";
     }
 
@@ -67,7 +67,7 @@ public class Learnfromothers {
         if (num <= 0) {
             return "redirect:/";
         }
-        List<Boardcontext> userlist = sqlSession.selectList(tablename + "getallbbs_everythingtotalk");
+        List<Boardcontext> userlist = sqlSession.selectList(tablename + "getallbbs_anime");
         PageInfo<Boardcontext> pageInfo = new PageInfo<Boardcontext>(userlist);
         int basesize = (int) pageInfo.getTotal();
 
@@ -96,7 +96,7 @@ public class Learnfromothers {
         }
         PageHelper.startPage(num, 20);
 
-        Iterable<Boardcontext> iterable = sqlSession.selectList(tablename + "getallbbs_everythingtotalk");
+        Iterable<Boardcontext> iterable = sqlSession.selectList(tablename + "getallbbs_anime");
         map.put("context", iterable);
         map.put("justforurl", controllernamefor2);
         map.put("list", list);
@@ -106,7 +106,7 @@ public class Learnfromothers {
 
 
     @GetMapping(controllername)
-    public String bbs_everythingtotalk(Map<String, Object> map) {
+    public String bbs_anime(Map<String, Object> map) {
         try {
             Subject currentUserId = SecurityUtils.getSubject();
             User user = (User) currentUserId.getPrincipal();
@@ -116,7 +116,7 @@ public class Learnfromothers {
             System.out.print("");
         }
 
-        List<Boardcontext> userlist = sqlSession.selectList(tablename + "getallbbs_everythingtotalk");
+        List<Boardcontext> userlist = sqlSession.selectList(tablename + "getallbbs_anime");
         PageInfo<Boardcontext> pageInfo = new PageInfo<Boardcontext>(userlist);
         int basesize = (int) pageInfo.getTotal();
 
@@ -142,7 +142,7 @@ public class Learnfromothers {
                 list.add(page - i);
             }
             PageHelper.startPage(page, 20);
-            Iterable<Boardcontext> iterable = sqlSession.selectList(tablename + "getallbbs_everythingtotalk");
+            Iterable<Boardcontext> iterable = sqlSession.selectList(tablename + "getallbbs_anime");
             map.put("context", iterable);
             map.put("justforurl", controllernamefor2);
             map.put("list", list);

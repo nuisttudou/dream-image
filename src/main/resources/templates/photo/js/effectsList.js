@@ -5,7 +5,7 @@ var EffectsList = [
 ];
 
 var EffectTmp = '    <li data-ename="{name}">\
-    <img src="photo/style/image/effect/{name}.png" />\
+    <img src="/photo/style/image/effect/{name}.png" />\
       <h3>{cnname}</h3>\
       <div class="itemInfo">\
         <span class="author lightFont">{author}</span>\

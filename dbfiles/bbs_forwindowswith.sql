@@ -16,10 +16,10 @@ Date: 2017-08-18 01:03:56
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for bbs_everythingtotalkwith
+-- Table structure for bbs_animewith
 -- ----------------------------
-DROP TABLE IF EXISTS `bbs_forwindowswith`;
-CREATE TABLE `bbs_forwindowswith` (
+DROP TABLE IF EXISTS `bbs_militarywith`;
+CREATE TABLE `bbs_militarywith` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) DEFAULT NULL,
   `context` text,
