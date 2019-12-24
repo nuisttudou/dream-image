@@ -22,14 +22,14 @@ import java.util.Map;
 
 @Controller
 @Scope("prototype")
-public class Forcomplain {
+public class Travel {
 
     @Autowired
     SqlSession sqlSession;
 
-    private static final String tablename = "forcomplain.";
-    private static final String controllername = "/bbs_forcomplain";
-    private static final String controllernamefor2 = "/bbs_forcomplain/";
+    private static final String tablename = "travel.";
+    private static final String controllername = "/bbs_travel";
+    private static final String controllernamefor2 = "/bbs_travel/";
 
     @GetMapping(controllernamefor2 + "{num}")
     public String bbscontext(@PathVariable int num, Map<String, Object> map) {

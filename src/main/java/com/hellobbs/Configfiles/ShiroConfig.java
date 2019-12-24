@@ -64,8 +64,8 @@ public class ShiroConfig {
         filterChainDefinitionMap.put("/dist/**", "anon");
         filterChainDefinitionMap.put("/", "anon");
         filterChainDefinitionMap.put("/index", "anon");
-        filterChainDefinitionMap.put("/bbs_everythingtotalk", "anon");
-        filterChainDefinitionMap.put("/bbs_everythingtotalk/**", "anon");
+        filterChainDefinitionMap.put("/bbs_anime", "anon");
+        filterChainDefinitionMap.put("/bbs_anime/**", "anon");
 
 //        System.out.println("ShiroConfig");
         filterChainDefinitionMap.put("/photo/**", "anon");//方便读取资源文件

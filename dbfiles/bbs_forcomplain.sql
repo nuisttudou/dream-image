@@ -16,7 +16,7 @@ Date: 2017-08-18 01:03:49
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for bbs_everythingtotalk
+-- Table structure for bbs_anime
 -- ----------------------------
 DROP TABLE IF EXISTS `bbs_forcomplain`;
 CREATE TABLE `bbs_forcomplain` (

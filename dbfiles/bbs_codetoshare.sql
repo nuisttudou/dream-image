@@ -16,10 +16,10 @@ Date: 2017-08-18 01:03:49
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for bbs_everythingtotalk
+-- Table structure for bbs_anime
 -- ----------------------------
-DROP TABLE IF EXISTS `bbs_codetoshare`;
-CREATE TABLE `bbs_codetoshare` (
+DROP TABLE IF EXISTS `bbs_food`;
+CREATE TABLE `bbs_food` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) DEFAULT NULL,
   `context` text,
