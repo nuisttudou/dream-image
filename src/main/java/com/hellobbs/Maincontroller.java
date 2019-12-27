@@ -46,7 +46,8 @@ public class Maincontroller {
 
         User user = new User();
         user.setUsername(username);
-        user.setPassword(password);
+        user.setPassword(password);//TODO MD5
+
         user.setUserroles(roles);
         user.setUserpics(userpics);
         user.setMessages(messages);
