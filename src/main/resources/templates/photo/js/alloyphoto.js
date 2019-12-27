@@ -86,7 +86,7 @@
 
                 var fileHandler;
                 el.openFile = function(callback){
-                    msgBox.show().title("AlloyPhoto —— 请上传图片").html("该效果请求使用您的图片，请上传图片<br /><div class='fileWrapper'><a id='openFile' class='fileButton button'><span>上传图片</span></a></div>");
+                    msgBox.show().title("梦图 —— 请上传图片").html("该效果请求使用您的图片，请上传图片<br /><div class='fileWrapper'><a id='openFile' class='fileButton button'><span>上传图片</span></a></div>");
 
                     document.getElementById("openFile").onclick = function(e){
                         fileHandler = callback;
