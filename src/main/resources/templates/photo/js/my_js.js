@@ -24,10 +24,11 @@ function uploadSingleFile(file) {//后
         console.log(xhr.responseText);
         var response = JSON.parse(xhr.responseText);
         if(xhr.status == 200) {
-            singleFileUploadSuccess.innerHTML = "<p>File Uploaded Successfully.</p><p>DownloadUrl : <a href='" +
-                response.fileDownloadUri + "' target='_blank'>" + response.fileDownloadUri + "</a>"+
-                "useUrl: http://localhost:8080/images/userimg/"+response.fileName+
-                "</p>"
+            singleFileUploadSuccess.innerHTML = "<p>DownloadUrl : <a href='" +
+                response.fileDownloadUri + "' target='_blank'>" + response.fileDownloadUri + "</a></p> <p>" +"useUrl:"+
+                "<a href='" +
+                "http://localhost:8080/images/userimg/"+response.fileName+"'>"+
+                "http://localhost:8080/images/userimg/"+response.fileName+"</a></p>"
             ;
             singleFileUploadSuccess.style.display = "block";
         } else {
