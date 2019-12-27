@@ -72,9 +72,17 @@ function uploadSingleFile_smms(file) {//后
         var response = JSON.parse(xhr.responseText);
         if(xhr.status == 200) {
             console.log(response)
-            singleFileUploadSuccess.innerHTML = response.data.url+" "+"<a href=response.data.delete>"+response.data.delete+"</a>";
+            // singleFileUploadSuccess.innerHTML = "useUrl:"+response.data.url+" "+
+            //     "<a href=response.data.delete>"+response.data.delete+"</a>";
+
+            singleFileUploadSuccess.innerHTML =
+            "<p>useUrl:"+
+            "<a href='" + response.data.url+"'>"+ response.data.url+"</a></p>"
+
+
+
             singleFileUploadSuccess.style.display = "block";
-            alert("useurl:\n"+response.data.url+"\ndeleteurl:\n"+response.data.delete);
+            // alert("useurl:\n"+response.data.url+"\ndeleteurl:\n"+response.data.delete);
         } else {
             singleFileUploadSuccess.style.display = "error";
         }
@@ -82,6 +90,7 @@ function uploadSingleFile_smms(file) {//后
     xhr.send(formData);
 }
 singleUploadButtonSMMS.addEventListener('click', function(event){//先
+    console.log("SMMS")
     var img = document.getElementById('pic');
     function dataURLtoFile(dataurl, filename) {
         var arr = dataurl.split(','),
@@ -114,3 +123,4 @@ singleUploadButtonSMMS.addEventListener('click', function(event){//先
 /*
 * {"success":true,"code":"success","message":"Upload success.","data":{"file_id":0,"width":800,"height":500,"filename":"c8qf4tjtbu.png","storename":"A2kOLZTocuRjBmF.png","size":698713,"path":"\/2019\/12\/09\/A2kOLZTocuRjBmF.png","hash":"ygMDoOJAark2RcWxF864uEY7nf","url":"https:\/\/i.loli.net\/2019\/12\/09\/A2kOLZTocuRjBmF.png","delete":"https:\/\/sm.ms\/delete\/ygMDoOJAark2RcWxF864uEY7nf","page":"https:\/\/sm.ms\/image\/A2kOLZTocuRjBmF"},"RequestId":"6F1ABCEE-63F5-4811-8DB3-95F6260065C1"}
 * */
+

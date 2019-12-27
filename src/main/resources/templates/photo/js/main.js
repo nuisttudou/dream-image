@@ -437,8 +437,9 @@
                 var data = _this.ps.save();
                 var img = new Image();
                 img.src = data;
+                img.id="pic";
                 $(".painting").html(img);
-                alert("图片已经输出成功，请右键点击图片，另存为图片即可保存");
+                // alert("图片已经输出成功，请右键点击图片，另存为图片即可保存");//GEM注释
                 /*
                 try{
                     _this.notifer.notice({"msg": data});
@@ -446,6 +447,7 @@
                     alert(e.message);
                 }
                 */
+                downloadImg();//GEM加入
             });
 
             $(".ljItem").click(function(){
