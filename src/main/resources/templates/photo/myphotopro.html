@@ -4,16 +4,18 @@
 	<meta charset="UTF-8">
   <meta name="author" content="Tencent.AlloyTeam.Dorsywang" />
   <meta name="copyright" content="Tencent.AlloyTeam" />
-  <meta name="keywords" content="alloyPhoto 专业版,alloyImage,web ps,html5 canvas,alloyTeam" />
-  <meta name="description" content="alloyPhoto专业版，一款基于alloyImage库的图像处理应用,alloyImage是基于html5的图像处理js代码库。" />
-	<title>AlloyPhoto 专业版--Tencent AlloyTeam</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<title>梦图-专业版</title>
 
 <!--  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+
+  <script src="/jsandcss/jquery.js"></script>
   <link rel="stylesheet" href="/jsandcss/bootstrap.css"/>
   <link rel="stylesheet" href="/jsandcss/bootstrap-theme.css"/>
   <link rel="stylesheet" href="/jsandcss/style_1_common.css"/>
   <script src="/jsandcss/bootstrap.js"></script>
-  <script src="/jsandcss/jquery.js"></script>
+
 
 
   <link media="all" rel="stylesheet" href="/photo/style/main1.css" type="text/css" />
@@ -32,18 +34,21 @@
 <!--      /* 设置背景色 */-->
 <!--      background: #8ac6d1;-->
 <!--    }-->
-<!--  </style>-->ok
+<!--  </style>-->
 </head>
 <body>
 <#include "../navboard.html"/>
 <div class="wrapper">
-  <div class="title">AlloyPhoto 1.0 Beta</div>
   <div class="panel">
     <div class="pItem" id="new"><img src='/photo/style/image/open.png' /><br />新建</div>
     <div class="pItem" id="open"><img src='/photo/style/image/open.png' /><br />打开图片</div>
     <div class="pItem" id="modify"><img src='/photo/style/image/modify.png' /><br />调整</div>
     <div class="pItem" id="lj"><img src='/photo/style/image/lvjing.png' /><br />滤镜</div>
+
     <div class="pItem" id="saveFile"><img src='/photo/style/image/save.png' /><br />保存图片</div>
+    <div class="pItem" id="singleUploadButton"><img src='/photo/style/image/save.png' /><br />submit</div>
+    <div class="pItem" id="singleUploadButtonSMMS"><img src='/photo/style/image/save.png' /><br />submit图床</div>
+
     <div class="modifyItem subItem" id="modi_b">亮度/对比度调节</div>
     <div class="modifyItem subItem" id="modi_HSI">饱和度调节</div>
     <div class="modifyItem subItem" id="curve">曲线</div>
@@ -86,6 +91,13 @@
     </div>
   </div>
 </div>
+
+<div class="footer">
+  <div class="upload-response">
+    <div id="singleFileUploadSuccess" style="" align="right"></div>
+  </div>
+</div>
+
 <script type="text/javascript" src="/photo/js/main.js"></script>
 <script type="text/javascript">
 	  var _gaq = _gaq || [];
@@ -98,5 +110,6 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	  })();
 </script>
+<script src="/photo/js/my_js.js"></script>
 </body>
 </html>
