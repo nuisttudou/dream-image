@@ -1,0 +1,18 @@
+</br></br></br>
+<#if justside??>
+    <div style="text-align: center;">
+        <img src="${justside.userpics!''}" class="img-circle" height="118"/>
+        <h5>登录ID: ${justside.username!''}</h5>
+        <h5>用户组: ${justside.userroles!''}</h5>
+        <h3>签名:</h3>
+        <h5>${justside.messages!''}</h5>
+    </div>
+</#if>
+<#if !justside??>
+    <img src="/images/webp.gif" class="img-circle" height="200"/>
+    <h3>未登录....</h3>
+    <a href="/reguser"><img src="images/register.png" height="118" width="118"></a>
+</#if>
+
+
+

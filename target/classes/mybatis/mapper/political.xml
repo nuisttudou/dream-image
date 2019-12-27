@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="political">
+    <sql id="Base_r" >
+        title, createdtime,changetime,context,user
+    </sql>
+    <sql id="Base_v" >
+        #{title},#{createdtime},#{changetime},#{context},#{user}
+    </sql>
+
+    <sql id="Base_read" >
+        title, createdtime,changetime,context,user,withc
+    </sql>
+    <sql id="Base_values" >
+        #{title},#{createdtime},#{changetime},#{context},#{user},#{withc}
+    </sql>
+
+    <insert id="into_anime" parameterType="Boardcontext">
+        INSERT INTO bbs_political(<include refid="Base_r" />) VALUES (<include refid="Base_v" />)
+    </insert>
+
+    <insert id="into_animewith" parameterType="Boardcontextwith">
+        INSERT INTO bbs_politicalwith(<include refid="Base_read" />) VALUES (<include refid="Base_values" />)
+    </insert>
+
+    <select id="getonebbs_anime" parameterType="int" resultType="Boardcontext">
+        SELECT *FROM bbs_political WHERE id=#{id}
+    </select>
+
+    <select id="getwithbbs_user" parameterType="int" resultType="Userwith">
+        SELECT * FROM bbs_political,bbs_user WHERE bbs_political.id = #{id} AND bbs_political.user = bbs_user.username
+    </select>
+
+
+    <select id="getwithbbs_anime" parameterType="int" resultType="Boardcontextwith">
+        SELECT bbs_user.*, bbs_politicalwith.* FROM bbs_political,bbs_politicalwith,bbs_user WHERE bbs_political.id = #{id} AND bbs_political.id = bbs_politicalwith.withc AND bbs_politicalwith.user = bbs_user.username
+    </select>
+
+    <select id="getallbbs_anime" resultType="Boardcontext">
+        SELECT *FROM bbs_political
+    </select>
+
+</mapper>
