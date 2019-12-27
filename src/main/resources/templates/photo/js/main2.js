@@ -90,7 +90,10 @@
                 };
             });
 
-            this.addEvent(".button", "click", function(e){
+            // this.addEvent(".button", "click", function(e){
+            //     document.getElementById("open").click();
+            // });
+            this.addEvent("#upload_button", "click", function(e){
                 document.getElementById("open").click();
             });
 
