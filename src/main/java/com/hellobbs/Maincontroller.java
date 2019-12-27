@@ -91,7 +91,7 @@ public class Maincontroller {
         user.setId(getuser2.getId());
         user.setMessages(messages);
         user.setUserpics(userpics);
-        user.setPassword(password);
+        user.setPassword(password);//MD5
         user.setUsername(username);
         user.setUserroles(roles);
         sqlSession.update("mainmapper.changesuser",user);
