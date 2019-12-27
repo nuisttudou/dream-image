@@ -25,6 +25,15 @@
         </div>
     </#if>
 
+    <#if finish_register??>
+    <div class="alert alert-danger alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert"
+                aria-hidden="true">
+            &times;
+        </button>
+        注册成功
+    </div>
+    </#if>
     <form action="/login" method="post">
         <input name="action" value="login" type="hidden">
         <input name="username" placeholder="用户名" required="" type="text" value="">
