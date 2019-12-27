@@ -25,10 +25,12 @@ public class User {
     }
 
     public String getPassword() {
+//        System.out.println("getPassword");
         return password;
     }
 
     public void setPassword(String password) {
+//        System.out.println("setPassword");
         this.password = password;
     }
 

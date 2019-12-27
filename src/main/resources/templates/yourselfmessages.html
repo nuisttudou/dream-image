@@ -33,7 +33,7 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">密码</label>
                             <div class="col-sm-10">
-                                <input name="password" type="text" class="form-control" placeholder="名字">
+                                <input name="password" id="password" type="password" class="form-control" placeholder="名字">
                             </div>
                         </div>
 
@@ -60,7 +60,7 @@
 
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default">提交</button>
+                                <button type="submit" class="btn btn-default" onclick="makeMD5()">提交</button>
                             </div>
                         </div>
                     </form>
@@ -71,5 +71,9 @@
 
     </div>
 </div>
+
+<script src="/jsandcss/md5.min.js"></script>
+<script src="jsandcss/my_md5.js"></script>
+
 </body>
 </html>

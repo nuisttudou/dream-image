@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="/jsandcss/bootstrap-theme.css"/>
     <script src="/jsandcss/bootstrap.js"></script>
     <link href="/jsandcss/login.css" type="text/css" rel="stylesheet">
+
+    <script src="/jsandcss/md5.min.js"></script>
+    <script src="jsandcss/my_md5.js"></script>
 </head>
 <body>
 
@@ -38,11 +41,12 @@
         <input name="action" value="login" type="hidden">
         <input name="username" placeholder="用户名" required="" type="text" value="">
         <hr class="hr15">
-        <input name="password" placeholder="密码" required="" type="password" value="">
+        <input name="password" id="password" placeholder="密码" required="" type="password" value="">
         <img src="/images/captrue">
         <input name="captruecode" placeholder="验证码" required="" type="text">
         <hr class="hr15">
-        <input value="登录" style="width:100%;" type="submit">
+        <input value="登录" style="width:100%;" onclick="makeMD5()" type="submit">
+
         <hr class="hr20">
         <a href="/reguser"><input value="注册" style="width:100%;" type="button"></a>
         <!-- 帮助 <a onClick="alert('请联系管理员')">忘记密码</a> -->
