@@ -1,0 +1,18 @@
+dt {
+    margin-left: 90px;/*ZHR Adding*/
+}
+
+@media (min-width: 768px) {
+    .dl-horizontal dt {
+        float: left;
+        width: 160px;
+        overflow: hidden;
+        clear: left;
+        text-align: center;/*ZHR CHANGE*//*text-align: right;*/
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .dl-horizontal dd {
+        margin-left: 180px;
+    }
+}
