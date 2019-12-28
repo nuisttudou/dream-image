@@ -24,15 +24,9 @@ public class User {
         this.username = username;
     }
 
-    public String getPassword() {
-//        System.out.println("getPassword");
-        return password;
-    }
+    public String getPassword() { return password; }
 
-    public void setPassword(String password) {
-//        System.out.println("setPassword");
-        this.password = password;
-    }
+    public void setPassword(String password) { this.password = password; }
 
     public String getUserpics() {
         return userpics;
