@@ -1,21 +1,5 @@
-# TODO
-* 主界面字对齐问题
-* 美化
-* 完成专业图像处理界面的提交逻辑(目前需要先点保存到本机)
-
-
 # 梦图论坛-图像分享社区（修图与分享论坛）
 
-## 技术栈	
-	JDk8
-	Spring
-	Spring boot
-	Shiro
-	Bootstrap3
-	JQuery
-	Freemarker
-	Mybatis
-	
 ## 安装运行
 * 本程序为maven项目，所以首先需要下载和配置好maven.http://maven.apache.org/download.cgi
 * clone 本项目
@@ -29,12 +13,35 @@
 * 使用命令 mvn clean package构建项目
 * 构建完成后一般在target\目录下会得到一个jar包，运行该jar包即可(暂时未完成)
 
-# 已实现的功能
+
+### TODO
+* 美化
+* 完成专业图像处理界面的提交逻辑(目前需要先点保存到本机)
+
+### 目前所有成员开发使用的操作系统系统包括
+    Ubuntu18.04
+    Windows10
+    
+### 技术栈	
+	JDk8
+	Spring
+	Spring boot
+	Shiro
+	Bootstrap3
+	JQuery
+	Freemarker
+	Mybatis
+	
+### 已实现的功能
 * MD5加密
 * 图片上传下载，保存到服务器或图床
 * 一个无后台的简单论坛
 * 简单的图像处理
 
+### 已修复的问题
+* 主界面字对齐问题
+* 登录和注册界面的对齐问题
+* 部分图标问题
 
 ### Using Project
     https://github.com/1036151470/HelloBbsMybatis2  
@@ -48,6 +55,7 @@
     DataGrip
 
 -------I have a dream
+
 -------I server for soviet Union
 
 最后,感谢梦图小组的每一个成员
