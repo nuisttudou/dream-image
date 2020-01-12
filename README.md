@@ -44,9 +44,9 @@
 * 部分图标问题
 
 ### Using Project
-    https://github.com/1036151470/HelloBbsMybatis2  
-    https://github.com/AlloyTeam/AlloyImage与https://github.com/AlloyTeam/AlloyPhoto/tree/master/alloyphoto  
-    https://github.com/callicoder/spring-boot-file-upload-download-rest-api-example  
+https://github.com/1036151470/HelloBbsMybatis2  
+https://github.com/AlloyTeam/AlloyImage与https://github.com/AlloyTeam/AlloyPhoto/tree/master/alloyphoto  
+https://github.com/callicoder/spring-boot-file-upload-download-rest-api-example  
 
 ### 开发中使用的工具  
     IDEA
