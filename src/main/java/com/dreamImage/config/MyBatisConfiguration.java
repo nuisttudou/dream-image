@@ -1,4 +1,4 @@
-package com.dreamImage.Configfiles;
+package com.dreamImage.config;
 
 import com.github.pagehelper.PageHelper;
 import org.springframework.context.annotation.Bean;

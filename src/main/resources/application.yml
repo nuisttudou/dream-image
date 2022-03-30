@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:
+  resources:
+    static-locations: classpath:/templates/
+
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/image_dream?serverTimezone=UTC
+      username: root
+      password: root
+
+  freemarker:
+    allow-request-override: false
+    cache: false
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
+    suffix: .html
+
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 215MB
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.dreamImage.database
+
+file:
+  upload-dir: ./target/classes/templates/images/userimg

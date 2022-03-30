@@ -1,5 +1,7 @@
-package com.dreamImage.Configfiles;
+package com.dreamImage.config;
 
+import com.dreamImage.Configfiles.MyFormAuthenticationFilter;
+import com.dreamImage.Configfiles.Myrealm;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
